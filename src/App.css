@@ -2,13 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+  height: 25px;
+  width: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+.nav-logo {
+  height: 24px;
+  width: 24px;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -32,7 +37,8 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
-}
+} */
