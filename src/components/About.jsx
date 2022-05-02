@@ -1,32 +1,56 @@
 import React from "react";
+import kjcodeheadshot from "../images/kjcodeheadshot.png";
 import styles from "../styles/About.module.css";
 
 function About(props) {
     return (
-        <div className="container bg-gray-700 p-10 text-left mx-auto width-3/4 m-12 shadow-lg ">
+        <div className="container p-10 text-left mx-auto width-3/4 m-12 ">
             <div className=' container text-white text-3xl full'>
-                <hr className="m-3" />
-                <h2 className="float-left mb-3 "> .01 About Me </h2>
+
+                <h2 className="float-left mb-3 "> .01 What I do </h2>
             </div>
 
-            <div className="container flex">
-                <p className='text-white text-2xl full text-center'>I build, optimize and design functional web sites with design principles in mind.
-                    My interest in web development started at age 7, when through a Virtual World I was able to customize my own unique space with HTML. I would later be drawn into the magic of web development and start my journey as a software engineer. I am a full stack web developer / software engineer / web3 engineer. I have worked in multiple startups at different stages in their journey. In my experience I have made standards, procedure and protocols for development. I have analyzed and optimized protocols to elleivate bottlenecks.
-                </p>
-                {/* <img src={} /> */}
-            </div>
 
-            <div className="container m-5 text-white">
-                <p>Recent technologies:</p>
-                <div className="container flex">
-                    <p>Javascript (ES6+)</p>
-                    <p>React</p>
-                    <p>Typscript</p>
-                    <p>Node.js</p>
-                    <p>Express</p>
-                    <p>WordPress</p>
-                    <p>WordPress</p>
+            <div className="container flex flex-wrap-wrap">
+                <div className='text-white  full text-center '>
+                    <br />
+                    <strong className=" text-3xl">Everything in software engineering is about data and patterns.</strong>
+                    <br />
+                    <br />
+                    <ul className="text-xl">
+                        <li>What's the data you need most? </li>
+                        <li>What's the best structure for your use case? </li>
+                        <li>How does the frontend access the data, pass and manipulate the data?</li>
+                        <br />
+                    </ul>
+
+                    <p className="text-2xl">I build responsive and optimized full stack web applications with data, patterns, and UX/UI design principles in mind.
+                        <br />
+                        <br />
+                        I help startups at mutliple stages with product development, devOps, software engineering mentoring, web3 engineering and optimizing procedures and protocols for both internal and external use.</p>
                 </div>
+                <img src={kjcodeheadshot} className={styles.headshot} />
+            </div>
+
+            <div className="container m-5 mt-10 full text-center text-2xl text-white">
+                <p>Recent technologies I worked with:</p>
+                <div className="container full ">
+                    <div className="my-10 flex">
+                        <ul>
+                            <li>Javascript (ES6+)</li>
+                            <li>React</li>
+                            <li>Typscript</li>
+                            <li>AWS</li>
+                        </ul>
+                        <ul>
+                            <li>Node.js</li>
+                            <li>Express</li>
+                            <li>MongoDB</li>
+                            <li>Wordpress</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
 
         </div>

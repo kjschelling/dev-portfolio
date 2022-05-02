@@ -2,7 +2,7 @@ import React from "react"
 
 function Projects(props) {
     return (
-        <div className="container bg-gray-700 p-10 text-left mx-auto width-3/4 m-12 shadow-lg ">
+        <div className="container p-10 text-left mx-auto width-3/4 m-12">
             <div className=' container text-white text-3xl full'>
                 <hr className="m-3" />
                 <h2 className="float-left mb-3 "> .03 Things I've built </h2>

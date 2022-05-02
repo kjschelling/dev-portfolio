@@ -1,19 +1,25 @@
 import React from "react"
+import { useState } from "react";
+import ContactForm from "./ContactForm";
 
 function Contact(props) {
+    const [showContactForm, setShowContactForm] = useState(false);
+
     return (
-        <div className="container bg-gray-700 p-10 text-left mx-auto width-3/4 m-12 shadow-lg ">
-            <div className=' container text-white text-3xl full'>
+        <div className="container p-10 text-left mx-auto width-3/4 m-12">
+            <div className='container text-white text-3xl full'>
                 <hr className="m-3" />
-                <h2 className="float-left mb-3 "> .01 About Me </h2>
+                <h2 className="float-left mb-3"> .04 Let's connect </h2>
             </div>
 
-            <div className="container flex">
-                <p className='text-white text-2xl full text-center'>I build, optimize and design functional web sites with design principles in mind.
-                    My interest in web development started at age 7, when through a Virtual World I was able to customize my own unique space with HTML. I would later be drawn into the magic of web development and start my journey as a software engineer. I am a full stack web developer / software engineer / web3 engineer. I have worked in multiple startups at different stages in their journey. In my experience I have made standards, procedure and protocols for development. I have analyzed and optimized protocols to elleivate bottlenecks.
-                </p>
-                {/* <img src={} /> */}
+            <div className="container">
+                <h2 className='text-white text-2xl full text-center'>
+                    Get in touch!
+                </h2>
+                <p className="text-white">Whether it be potiential job opporounities, project ideas, mentoring or just to chat about the tech space, I'd love to keep in touch! I'm a curious human who loves all things technology and art, follow me on Github and Twitter to keep in touch!</p>
+                <button onClick={setShowContactForm(true)} className="border rounded text-white m-3 p-3" >Say Hello :)</button>
             </div>
+            <ContactForm show={showContactForm} setShowContactForm={setShowContactForm} />
         </div>
     )
 }
